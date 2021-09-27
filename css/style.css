@@ -1,0 +1,938 @@
+/* Global */
+
+@font-face {
+    font-family: Gobold;
+    src: url(../fonts/Gobold_Thin.ttf);
+}
+
+.text-light-grey {
+    color: #82878a;
+}
+
+.black-bg {
+    background-color: #0c0c0c;
+}
+
+.lighter-black-bg {
+    background-color: #0f0f0f;
+}
+
+.light-grey-bg {
+    background-color: #e6e6e6;
+}
+
+.dark-grey-bg {
+    background-color: #161616;
+}
+
+.red-bg {
+    background-color: #9e171d;
+}
+
+.grey {
+    color: #82878a
+}
+
+.dark-grey {
+    color: #4a4c4c
+}
+
+.red {
+    color: #9e171d
+}
+
+.black {
+    color: #000;
+}
+
+.darkest-grey {
+    color: #0e0e0e;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.part-name {
+    text-transform: uppercase;
+    font-family: Gobold, 'Comic Sans MS';
+    padding-bottom: 10px;
+}
+
+.part-description {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.grey-decoration {
+    position: relative;
+}
+
+.grey-decoration::before {
+    content: " ";
+    height: 2px;
+    width: 50px;
+    background-color: #4a4c4c;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.white-decoration {
+    position: relative;
+}
+
+.white-decoration::before {
+    content: " ";
+    height: 2px;
+    width: 50px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.red-decoration {
+    position: relative;
+}
+
+.red-decoration::before {
+    content: " ";
+    height: 2px;
+    width: 50px;
+    background-color: #9e171d;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.fs13 {
+    font-size: 13px;
+}
+
+.fs14 {
+    font-size: 14px;
+}
+
+.fs25 {
+    font-size: 25px;
+}
+
+.fs40 {
+    font-size: 40px;
+}
+
+.title-padding {
+    padding-top: 80px;
+}
+
+.section-bottom-padding {
+    padding-bottom: 80px;
+}
+
+@media screen and (max-width: 1199px) {
+    .container {
+        max-width:960px
+    }
+}
+
+@media screen and (max-width: 991px){
+    .container {
+        max-width: 720px;
+    }
+    .menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .container {
+        max-width: 540px;
+    }
+    .menu {
+        display: none;
+    }
+}
+
+/* Header */
+
+header {
+    padding-top: 83px;
+    padding-bottom: 60px;
+}
+
+.burger-button {
+    text-align: end;
+}
+
+.burger-close {
+    display: none;
+}
+
+.menu-open:focus {
+    outline: none;
+}
+
+.header .show-menu {
+    display: inline-flex;
+    margin-top: 70px;
+    margin-bottom: 0;
+}
+
+.navbar {
+    padding-right: 13px;
+}
+
+.nav-item {
+    padding: 0 15px;
+    justify-content: center;
+}
+
+.nav-item:last-child {
+    padding-right: 0;
+}
+
+.menu {
+    display: none;
+}
+
+
+@media screen and (max-width: 1199px) {
+    .menu {
+        display: none;
+    }
+
+    .nav-item {
+        margin-right: 50px;
+    }
+
+    .show-menu {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .nav-item {
+        margin: 0 10px;
+        padding: 0 10px;
+    }
+
+    .show-menu {
+        justify-content: space-between;
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    .show-menu {
+        justify-content: space-around;
+    }
+}
+
+/* Top */
+
+.top {
+    padding-bottom: 95px;
+}
+
+.car-image {
+    position: relative;
+    padding-top: 28px;
+}
+
+.car-image img {
+    position: absolute;
+    left: 16px;
+    z-index: 1;
+    width: 700px;
+}
+
+.car-block {
+    max-height: 500px;
+    max-width: 530px;
+    padding: 60px 100px 0 160px;
+}
+
+.another-car {
+    margin-bottom: 80px;
+}
+
+.another-car p {
+    margin-right: 40px;
+}
+
+.car-description {
+    margin-bottom: 140px;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 1199px) {
+    .responsive {
+        text-align: center;
+    }
+
+    .car-part {
+        display: block;
+        padding-top: 28px;
+        text-align: center;
+    }
+
+    .car-image {
+        position: unset;
+    }
+
+    .car-image img {
+        position: unset;
+    }
+
+    .car-block {
+        padding: 60px 100px 0 100px;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .car-image img {
+        max-width: 500px;
+    }
+}
+
+/* Intro */
+
+.intro {
+    display: inline-block;
+}
+
+.intro-row .part-name {
+    padding-top: 50px;
+}
+
+.our-services {
+    background-image: url(../img/services-car.png);
+    height: 600px;
+    max-width: 535px;
+    line-height: 1.714;
+}
+
+.our-services-inner {
+    padding-left: 191px;
+}
+
+.services-desc {
+    padding-right: 40px;
+}
+
+.weddings {
+    background-image: url(../img/weddings-car.png);
+    position: relative;
+    max-width: 419px;
+    height: 600px;
+}
+
+.weddings-inner {
+    padding-right: 16px;
+}
+
+.weddings-desc {
+    line-height: 1.714;
+    padding-right: 45px;
+}
+  
+.tours {
+    background-image: url(../img/tours-car.png);
+    height: 600px;
+    max-width: 565px;
+    position: relative;
+}
+
+.tours-inner {
+    padding-right: 178px;
+}
+
+.tours-desc {
+    line-height: 1.714;
+    padding-right: 55px;
+}
+
+.intro-button {
+    position: absolute;
+    bottom: 50px;
+}
+
+@media screen and (max-width: 1199px) {
+    .our-services {
+        padding-left: 30px;
+        padding-right: 15px;
+        max-width: 390px;
+    }
+
+    .our-services-inner {
+        padding-left: 70px;
+    }
+    
+    .weddings {
+        max-width: 390px;
+        padding-right: 30px;
+    }
+
+    .weddings-inner {
+        padding-right: 0;
+    }
+
+    .tours {
+        padding-right: 15px;
+        max-width: 390px;
+    }
+
+    .tours-inner {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .intro-row {
+        display: block;
+    }
+
+    .our-services {
+        max-width: 100%;
+        background-size: 100%;
+        background-position-y: -315px;
+    }
+
+    .our-services-inner  {
+        padding-left: 93px;
+    }
+
+    .weddings {
+        max-width: 100%;
+        background-size: 100%;
+        background-position-y: -470px;
+    }
+
+    .weddings-inner {
+        padding-left: 93px;
+    }
+
+    .tours-inner {
+        padding-left: 93px;
+    }
+
+    .tours {
+        max-width: 100%;
+        background-size: 100%;
+        background-position-y: -265px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .our-services {
+        background-position-y: -215px;
+    }
+
+    .weddings {
+        background-position-y: -325px;
+    }
+
+    .tours {
+        background-position-y: -200px;
+    }
+}
+
+/* Our fleet */
+
+.our-fleet-name {
+    margin-bottom: 50px;
+}
+
+.car-wrapper {
+    display: flex;
+}
+
+.auto-row {
+    position: relative;
+}
+
+.car-wrapper-previous-button {
+    position: absolute;
+    text-align: start;
+    align-self: center;
+    right: 60px;
+}
+
+.car-wrapper-next-button {
+    position: absolute;
+    text-align: end;
+    align-self: center;
+    left: 90px;
+}
+
+.car-name {
+    margin-top: 12px;
+}
+
+@media screen and (max-width: 1199px) {
+    .our-fleet {
+        text-align: center;
+    }
+
+    .fleet-title {
+        text-align: left;
+    }
+
+    .auto-row {
+        display: inline-block;
+        position: inherit;
+    }
+
+    .car-wrapper-previous-button {
+        position: inherit;
+        text-align: center;
+        transform: rotate(90deg);
+        margin-bottom: 50px;
+    }
+
+    .car-wrapper {
+        display: block;
+        text-align: center;
+    }
+
+    .fleet-car {
+        display: inline;
+        text-align: center;
+    }
+
+    .car-wrapper-next-button {
+        position: inherit;
+        text-align: center;
+        transform: rotate(90deg);
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .our-fleet-name {
+        padding-left: 0;
+    }
+}
+
+/* Services */
+
+.contact {
+    padding-left: 0;
+}
+
+.form-inside {
+    padding-left: 0;
+}
+
+.contact .part-description {
+    margin-top: 10px;
+}
+
+.services .row {
+    justify-content: center;
+    padding-left: 15px;
+}
+
+.services .row .col-8 {
+    padding-left: 0;
+}
+
+.form-part  {
+    margin-top: 20px;
+}
+
+.label-block {
+    display: flex;
+}
+
+.input-name {
+    display: block;
+}
+
+.checkbox {
+    display: inline-flex;
+    margin-bottom: 20px;
+}
+
+.babyseat-check {
+    margin-right: 65px;
+    position: relative;
+}
+
+.custom-checkbox {
+    position: absolute;
+    height: 0;
+    width: 0;
+    cursor: pointer;
+}
+
+.checkbox-babyseat-upd {
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    background-color: #161616;
+    border: 2px solid #9e171d;
+    margin-left: 30px;
+}
+
+.checkbox-babyseat-upd:checked::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 121px;
+    top: 0;
+    width: 6px;
+    height: 10px;
+    border: solid #9e171d;
+    background-color: #161616;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+
+input:checked+.checkbox-babyseat-upd {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 121px;
+    top: 0;
+    width: 7px;
+    height: 14px;
+    border: 1px solid #e6e6e6;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.checkbox-luggage-upd {
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    background-color: #161616;
+    border: 2px solid #9e171d;
+    margin-left: 30px;
+}
+
+.checkbox-luggage-upd:checked::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 233px;
+    top: 11px;
+    width: 7px;
+    height: 14px;
+    border: solid #9e171d;
+    background-color: #161616;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+input:checked+.checkbox-luggage-upd {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 267px;
+    top: 11px;
+    width: 7px;
+    height: 14px;
+    border: 1px solid #e6e6e6;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.extra-luggage-check {
+    margin-right: 65px;
+}
+
+.custom-select {
+    background-color: #161616;
+    width: 345px;
+    height: 30px;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    color: #82878a;
+    border-radius: unset;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 28px;
+    border: 1px solid #82878a;
+}
+
+.name-block {
+    margin-right: 30px;
+}
+
+.name {
+    width: 270px;
+    height: 30px;
+}
+
+.email {
+    width: 370px;
+    height: 30px;
+}
+
+textarea {
+    width: 670px;
+    height: 88px;
+    margin-bottom: 20px;
+    height: 90px;
+    resize: none;
+}
+
+.submit-btn {
+    width: 168px;
+    height: 43px;
+    border-radius: unset;
+    background-color: #161616;
+    border: 1px solid #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 13px;
+    margin-bottom: 80px;
+}
+
+.estimate {
+    margin-bottom: 60px;
+}
+
+.price {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.special-events {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 1.846;
+    margin-bottom: 45px;
+    width: 330px;
+}
+
+.another-trip a {
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 1199px) {
+    .contact {
+        padding: 0;
+    }
+
+    .your-estimate {
+        padding-left: 25px;
+    }
+
+    .label-block {
+        display: -webkit-box;
+    }
+
+    .checkbox {
+        display: block;
+    }
+
+    input:checked+.checkbox-luggage-upd {
+        top: 0;
+    }
+
+    .name {
+        width: 370px;
+    }
+
+    .email {
+        width: 370px;
+    }
+
+    textarea {
+        width: 370px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .your-estimate {
+        padding-left: 0;
+    }
+
+    .label-block {
+        display: flex;
+    }
+
+
+}
+
+@media screen and (max-width: 767px) {
+    .services .row {
+        justify-content: start;
+    }
+
+    .another-trip {
+        margin-bottom: 0;
+        padding-bottom: 80px;
+    }
+}
+
+/* Testimonials */
+
+.testimonials-head {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 80px;
+    padding: 0;
+}
+
+.arrows-part {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.persons-row {
+    display: flex;
+}
+
+.test-person {
+    margin-bottom: 100px;
+    max-width: 370px;
+}
+
+.person-photo {
+    margin-bottom: 25px;
+}
+
+.person-opinion {
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.714;
+    text-align: left;
+}
+
+.person-name {
+    font-family: Gobold, 'Comic Sans MS';
+}
+
+@media screen and (max-width: 1199px) {
+    .testimonials-row {
+        display: block;
+        padding-top: 1px;
+    }
+
+    .test-person {
+        text-align: center;
+        padding-left: 45px;
+    }
+
+    .person-name {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .persons-row {
+        display: inline;
+    }
+}
+  
+
+/* Bottom */
+
+
+.bottom-head {
+    width: 100%;
+    margin: auto;
+}
+
+.bottom .nav {
+    margin-top: 50px;
+}
+
+.nav-bottom {
+    margin-right: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contacts {
+    margin-top: 50px;
+    font-family: 'Open Sans', sans-serif;  
+}
+
+.mail-to {
+    text-decoration: underline;
+    margin-left: 50px;
+}
+
+
+@media screen and (max-width: 1199px) {
+    .mail-to {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .mail-to {
+        margin-left: 0;
+    }
+    
+    .bottom-nav ul {
+        justify-content: space-evenly;
+    }
+}
+
+/* Footer */
+
+.terms {
+    margin-top: 23px;
+}
+
+footer .row {
+    align-items: baseline;
+}
+
+.information {
+    text-align-last: start;
+} 
+
+.terms a {
+    margin-right: 18px;
+}
+
+.social-networks p {
+    margin-top: 21px;
+    margin-bottom: 20px;
+}
+
+.social-network-logos {
+    margin-left: 45px;
+}
+
+.social-networks a {
+    margin-right: 7px;
+    margin-top: 11px;
+}
+
+.social-network-logos a {
+    margin-right: 5px;
+}
+
+
+@media screen and (max-width: 1199px) {
+    .social-network-logos {
+        margin-left: 25px;
+    }
+
+    .terms a {
+        display: grid;
+    }
+
+    footer p {
+        display: grid;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .social-network-logos {
+        margin-left: 2px;
+    }
+}
