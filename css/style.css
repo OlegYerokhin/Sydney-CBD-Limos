@@ -1998,6 +1998,7 @@ textarea {
 
     .persons-row .bx-wrapper .bx-controls-direction a {
         top: -125px;
+	margin-top: 30px;
     }
 
     .persons-row .bx-wrapper .bx-prev {
